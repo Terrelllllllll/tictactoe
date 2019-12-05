@@ -1,7 +1,7 @@
-
-
-
-
+var currenPlayer= 'x';
+var numberofTurn=  0 ;
+var gameover= false
+$(PerformLogic)
 
 
 
