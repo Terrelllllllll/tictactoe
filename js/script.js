@@ -1,7 +1,21 @@
-var currenPlayer= 'x';
+var currentPlayer= 'x';
 var numberofTurn=  0 ;
 var gameover= false
-$(PerformLogic)
+function performLogic(buttonId,tileId) { 
+$(buttonId).hide();
+$(tileId).text(currentPlayer);
+UpdatePlayer
+}
+
+function updatePlayer(){
+if (currentPlayer === 'x') {
+  currentPlayer = 'o'; 
+}else {
+currentPlayer ='x';
+}
+
+
+}
 
 
 
