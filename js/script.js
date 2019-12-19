@@ -1,10 +1,16 @@
 var currentPlayer= 'x';
 var numberofTurn=  0 ;
 var gameover= false
+function addTurn() {
+  numberofTurn = numberofTurn + 1
+}
 function performLogic(buttonId,tileId) { 
 $(buttonId).hide();
 $(tileId).text(currentPlayer);
-UpdatePlayer
+updatePlayer();
+addTurn();
+console.log(numberofTurn);
+
 }
 
 function updatePlayer(){
@@ -13,9 +19,10 @@ if (currentPlayer === 'x') {
 }else {
 currentPlayer ='x';
 }
-
-
 }
+
+
+
 
 
 
